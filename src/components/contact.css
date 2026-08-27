@@ -1,0 +1,34 @@
+.contact__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  max-width: 800px;
+}
+
+.contact__card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact__card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.contact__label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+}
+
+.contact__value {
+  font-size: 14.5px;
+  color: var(--text-primary);
+  word-break: break-word;
+}

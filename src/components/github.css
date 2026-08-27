@@ -1,0 +1,20 @@
+.github-section__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.github-section .section-title,
+.github-section .section-lede {
+  margin-bottom: 0;
+}
+
+.github-section .section-title {
+  margin-bottom: 12px;
+}
+
+.github-section__btn {
+  flex-shrink: 0;
+}
