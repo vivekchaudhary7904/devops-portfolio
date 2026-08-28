@@ -33,3 +33,6 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::487694860626:role/GitHubActionsPortfolioDeployRole
           aws-region: eu-north-1
+
+      - name: Deploy to S3
+        run: aws s3 sync dist/ s3://portfilio-site --delete
